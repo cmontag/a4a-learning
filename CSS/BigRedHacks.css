@@ -1,0 +1,227 @@
+html {
+  background: url(../Images/background.jpg) no-repeat center center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+#ALL {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+}
+
+#content {
+	flex: 1;
+}
+
+#title {
+	font-size: 5em;
+	text-align: center;
+	margin: 0;
+	padding-top: 3%;
+	text-shadow:
+	-2px -2px 0 #000,
+	2px -2px 0 #000,
+	-2px 2px 0 #000,
+	2px 2px 0 #000;
+}
+
+#header {
+	height: 200px;
+	width: 100%;
+	margin-bottom: 3%;
+	position: relative;
+	background-color: black;
+}
+
+#indexTopRow {
+	width: 92%;
+	float: left;
+	margin-left: 4%;
+	border-bottom: 1px black solid;
+}
+
+#topRow {
+	width: 92%;
+	float: left;
+	margin-left: 4%;
+}
+
+#botRow {
+	width: 92%;
+	float: left;
+	margin-left: 4%;
+}
+
+.lGame {
+	float: left;
+	width: 48%;
+	margin: 0 0 0 1%;
+	border-right: 1px black solid;
+	padding-right: 1%;
+}
+
+.rGame {
+	float: left;
+	width: 48%;
+	margin: 0 0 0 1%;
+}
+
+.mainLink {
+
+}
+
+.option {
+	text-align: center;
+	background-image: url(../Images/pizza.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	line-height: 500px;
+	display: box;
+	opacity: 0.7;
+	font-family: Aqua, serif;
+	color: black;
+	font-size: 2.5em;
+}
+
+.option:hover {
+	opacity: 1;
+}
+
+#basePanel {
+	margin-left: 2.67%;
+}
+
+.comic1 {
+	float: left;
+	position: relative;
+	width: 31%;
+	margin-left: 1%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	line-height: 500px;
+	text-align: center;
+	display: box;
+	background-image: url(../Images/pizza.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.cover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: black;
+	height: 100%;
+	width: 100%;
+}
+
+#topBar {
+	text-align: center;
+	margin: 0 auto;
+	margin-top: -2%;
+}
+
+#buttonBar {
+	width: 92%;
+	float: left;
+	margin-left: 4%;
+}
+
+.msg {
+	position: absolute;
+	font-family: Aqua, serif;
+	font-size: 1em;
+}
+
+.msgStep {
+	display: none;
+	float: left;
+	position: relative;
+	width: 15%;
+	height: 40px;
+	margin-left: 1%;
+}
+
+#butt0 {
+	height: 40px;
+	width: 10%;
+}
+
+#butt1 {
+	margin-left: 10.67%;
+}
+
+#butt2 {
+	margin-left: 42.67%;
+}
+
+#butt3 {
+	margin-left: 74.67%;
+}
+
+#butt4 {
+	margin-left: 10.67%;
+}
+
+#butt5 {
+	margin-left: 42.67%;
+}
+
+#butt6 {
+	margin-left: 74.67%;
+}
+
+.procInstruct {
+
+}
+
+.info {
+	font-family: Aqua, serif;
+	font-size: 1em;
+}
+
+.invis {
+	opacity: 0;
+}
+
+#about {
+	color: white;
+	text-align: center;
+	margin-top: 3%;
+}
+
+#footer {
+	float: left;
+	width: 100%;
+	height: 100px;
+	background-color: black;
+	margin-top: 3%;
+	bottom: 0;
+}
+
+
+h5 {
+	color: white;
+}
+
+@font-face {
+	font-family: Aqua;
+	src: url(../Fonts/aqua.ttf);
+}
+
+@font-face {
+	font-family: KGNeatlyPrinted;
+	src: url(../Fonts/KGNeatlyPrinted.ttf);
+}

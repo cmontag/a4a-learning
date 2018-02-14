@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title> Emotions Quiz </title>
+	<script type="text/javascript">
+	// From: http://www.codingforums.com/showthread.php?t=228912
+
+	var questions = [
+		['../Images/happy.png','0'],
+		['../Images/excited.png','1'],
+		['../Images/angry.png','2'],
+		['../Images/sad.png','3'],
+		['../Images/loving.png','4']
+		  // Note: no comma after last entry
+	];
+	var qNo = 0;
+	var correct = 0;
+	var cnt = 0;
+
+	function NextQuestion(response) {
+	  if ((qNo < questions.length) && (response == questions[qNo][1])) { correct++; }
+	  document.getElementById('score').innerHTML = 'You had '+correct+' correct answers for '+(cnt+1)+' questions';
+	  qNo++;
+	  if (qNo < questions.length) { document.getElementById('Pic').src = questions[qNo][0]; cnt++; }
+						     else { alert('Quiz is done'); }
+	}
+	onload = function() {
+	 document.getElementById('Pic').src = questions[0][0];
+	}
+
+	</script>
+
+</head>
+<body>
+	<div align="center">
+		<h1>Choose the Correct Emotion!</h1>
+		<img src=url(questions[qNo]) id="Pic" height="200" width="250">
+		<p> 
+		<button onclick="NextQuestion('0')">Happy</button>
+		<button onclick="NextQuestion('1')">Excited</button>
+		<button onclick="NextQuestion('2')">Angry</button>
+		<button onclick="NextQuestion('3')">Sad</button>
+		<button onclick="NextQuestion('4')">Loving</button>
+		<p>Your score: <br><span id="score"></span>
+	</body>
+</html>
